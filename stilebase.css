@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/*regole di tutti*/
+body {
+    font-family: 'Open Sans';
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('foto_sito/sfondo_base2.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .home{
+    height:100%;
+  }
+  
+  li 
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    font-size: 30px;
+    list-style-type: none;
+    transition: 0.5s;    
+  }
+
+  ul{
+    display: inline-grid;
+    grid-template-columns:12% 12% 12% 12% 12%;
+    background-color: #5F9EA0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    width: 100%;
+    height:65px;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    border-bottom: 2px solid black;
+  }
+  li a{
+    color:black;
+  }
+  li a:link {
+    text-decoration: none;
+  }
+  li a:visited {
+    text-decoration: none;
+  }
+  li:hover {
+    background-color: #6495ED;
+  }
+  .listalogo{
+    justify-self: end;
+    grid-column: 6;
+    width: 100px;
+    padding-right:15px;
+  }
+  #logo{
+    width:100%;
+  }
+  .titolo{
+    text-align: center;
+    margin-bottom:25px;
+  }
+  #titolo{
+    margin: 0;
+    font-size: 40px;
+  }
+  .pagina{
+    width:85%;
+    font-size:23px;
+    background-color:white;
+    margin:115px auto 50px auto;
+    border-radius: 10px;
+    padding: 40px 60px 40px 60px;
+  }
+  /*regole storiografia*/
+  .testo{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 50px;
+  }
+  .trio img{
+    padding-left: 150px;
+    padding-top: 40px;
+    width: 55%;
+  }
+  .nausicaa img{
+    padding-left:70px;
+    width: 70%;
+  }
+  .laputa{
+    justify-self: center;
+    padding-top:50px;
+  }
+  .desc_foto {
+    display:none;
+    font-size:13px;
+  }
+  .trio img:hover + .desc_foto{
+    padding-left:28px;
+    display: flex;
+    justify-content: center;
+  }
+  .nausicaa img:hover + .desc_foto{
+    display: flex;
+    justify-content: center;
+  }
+  .laputa img:hover + .desc_foto{
+    display: flex;
+    justify-content: center;
+  }
+
+  /*regole filmografia*/
+  .film{
+    display:grid;
+    grid-template-columns: 50% 50%;
+  }
+  #titolo_film{
+    margin: 0;
+    text-align: center;
+  }
+  #desc_film{
+    text-align: center;
+    font-size:21px;
+  }
+  .locandina_gif{
+    height:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  .locandina_gif img{
+    width: auto; 
+    max-height: 100%;
+  }
+  .locandina_gif input[type=button]{
+    background-color: #5F9EA0;
+    margin: 20px;
+    height: 25px;
+    width: 40px;
+    border:none;
+    border-radius: 10px;
+  }
+  
+  input[type=button]:hover {
+    cursor: pointer;
+    background-color: #6495ED;
+    text-shadow: 2px 2px 5px gray;
+  }
+  #descrizione{
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  #info{
+    text-align: center;
+    font-size: 17px;
+  }
+  #info2{
+    text-align: center;
+    font-size: 17px;
+  }
+  #regista{
+    font-style: italic;
+  }
+
+  #auto{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    background-color: #5F9EA0;
+    border: none;
+    justify-self: center;
+    grid-row: 2;
+    width: 40%;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+  #auto:hover {
+    cursor: pointer;
+    background-color: #6495ED;
+  }
+
+  /*regole libreria*/
+  .pagina2{
+    width:85%;
+    font-size:23px;
+    background-color:white;
+    margin:110px auto 50px auto;
+    border-radius: 10px;
+    padding: 40px 50px 30px 50px;
+  }
+  .scorrifilm{
+    display:flex;
+  }
+  #gif{
+    width:60%;
+  }
+  .gif{
+    display: flex;
+    justify-content: center;
+  }
+  .scorrifilm img {
+    width:20%;
+  }
+  #placeholder {
+    text-align: center;
+  }
+  .selezione{
+    margin:auto;
+  }
+  .selezione p{
+    text-align: center;
+  }
+  #contenitore{
+    background-color:#E0E0E0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto auto 15px auto;
+    width: 15%;
+    height: 250px;
+  }
+  .selezionefilm{
+    width:60%;
+    margin:auto;
+    overflow: auto;
+    background-color: #5F9EA0;
+    white-space: nowrap;
+  }
+  .pagina2 .titolo{
+    padding-bottom:20px;
+  }
+  .selezionefilm img{
+    padding: 10px;
+    cursor: grab;
+  }
+
+  #contenitore img{
+    width:80%;
+  }
+  .contenuto p {
+    text-align: center;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /*all*/
+  ::-webkit-scrollbar-track {
+    background: white; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #6495ED; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+ footer{
+  background-color: #5F9EA0;
+  padding-bottom:2px;
+ }
+ footer p{
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 17px;
+ }
+
+/*checked*/

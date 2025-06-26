@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+  font-family: 'Open Sans';
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url('foto_sito/nuova.gif');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.nav_menu {
+  border-bottom: 2px solid black;
+}
+
+li 
+{
+  display:inline-block;
+  margin: 0;
+  padding: 10px 80px 10px 80px;
+  font-size: 35px;
+  text-decoration: none;
+  transition: 0.5s;   
+}
+ul{
+  display: flex;
+  justify-content: center;
+  background-color: #5F9EA0;
+  margin-top:0;
+  margin-bottom:0;
+}
+a{
+  color:black;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+li:hover {
+  background-color: #6495ED;
+}
+#logo{
+  width:40%;
+  padding-top:140px;
+  padding-bottom:13%;
+}
+
+.home{
+  display: flex;
+  justify-content: center;
+}
+
+/*checked*/
+
+
+
+ 
+
+
